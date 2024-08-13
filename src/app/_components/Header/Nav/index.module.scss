@@ -8,12 +8,26 @@
   opacity: 1;
   transition: opacity 100ms linear;
   visibility: visible;
+  color:rgb(12, 33, 154);
 
   > * {
     text-decoration: none;
   }
 }
 
+
+@keyframes flash {
+    0% { background-color: rgb(250, 210, 40); } /* Original color */
+    50% { background-color: darkorange; }       /* Flash to darkorange */
+    100% { background-color: rgb(250, 210, 40); } /* Back to original color */
+}
+
+.callnow {
+    background-color: rgb(250, 210, 40);
+    padding: 10px;
+    border-radius: 5px;
+    animation: flash 1.5s infinite;
+}
 .hide {
   opacity: 0;
   visibility: hidden;

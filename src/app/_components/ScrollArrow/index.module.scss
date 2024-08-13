@@ -1,0 +1,18 @@
+.scrollArrow {
+  position: fixed;
+  bottom: 80px;
+  right: 10px;
+  width: 30px;
+  height: 20px;
+  background-color:rgb(12, 33, 154) ;
+  clip-path: polygon(50% 100%, 0% 0%, 100% 0%);
+  cursor: pointer;
+  z-index: 1000;
+  opacity: 0.9;
+  transition: transform 0.3s ease;
+}
+
+.scrollArrow.up {
+  transform: rotate(180deg);
+  /* Rotate arrow to point up */
+}

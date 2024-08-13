@@ -1,0 +1,25 @@
+.header {
+  padding:0;
+  color: rgb(12, 33, 154);
+  background-color: darkorange;
+
+}
+
+.wrap {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: calc(var(--base) / 2) var(--base)
+}
+
+.logo {
+  width: auto;
+  height: auto;
+}
+
+.hide {
+  display: none;
+  color: rgb(12, 33, 154);
+
+}
